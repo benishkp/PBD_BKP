@@ -15,8 +15,7 @@ class SpellChecker():
 			if not self.check_word(word):
 				print('Word is misspelt : ' + word)
 				failed_words.append(word)
-				return False
-		return True
+		return failed_words
 
 spell_check = SpellChecker()
 spell_check.load_words("spell.words")
