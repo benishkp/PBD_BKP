@@ -1,0 +1,300 @@
+
+C:\bigdata\PBD_BKP\spellChecker>python spellcheck_test.py
+  File "spellcheck_test.py", line 22
+    self.assertEquals('spelllleeeing', failed_words[1])
+    ^
+IndentationError: unexpected indent
+
+C:\bigdata\PBD_BKP\spellChecker>
+C:\bigdata\PBD_BKP\spellChecker>
+C:\bigdata\PBD_BKP\spellChecker>
+C:\bigdata\PBD_BKP\spellChecker>
+C:\bigdata\PBD_BKP\spellChecker>
+C:\bigdata\PBD_BKP\spellChecker>
+C:\bigdata\PBD_BKP\spellChecker>
+C:\bigdata\PBD_BKP\spellChecker>python spellcheck_test.py
+  File "spellcheck_test.py", line 22
+    self.assertEquals('spelllleeeing', failed_words[1])
+    ^
+IndentationError: unexpected indent
+
+C:\bigdata\PBD_BKP\spellChecker>python spellcheck_test.py
+  File "spellcheck_test.py", line 22
+    self.assertEquals('spelllleeeing', failed_words[1])
+    ^
+IndentationError: unexpected indent
+
+C:\bigdata\PBD_BKP\spellChecker>python spellcheck_test.py
+  File "spellcheck_test.py", line 22
+    self.assertEquals('spelllleeeing', failed_words[1])
+    ^
+IndentationError: unexpected indent
+
+C:\bigdata\PBD_BKP\spellChecker>python spellcheck_test.py
+True
+False
+Word is misspelt : mistasdas
+['mistasdas']
+Word is misspelt : mistasdas
+Word is misspelt : mistasdas
+Word is misspelt : spelllleeeing
+Word is misspelt : mistasdas
+F
+======================================================================
+FAIL: test_spell_checker (__main__.TestSpellChecker)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "spellcheck_test.py", line 23, in test_spell_checker
+    self.assertFalse(self.spellChecker.check_words('zygotic mistasdas elementary
+'))
+AssertionError: ['mistasdas'] is not false
+
+----------------------------------------------------------------------
+Ran 1 test in 0.031s
+
+FAILED (failures=1)
+
+C:\bigdata\PBD_BKP\spellChecker>python spellcheck_test.py
+True
+False
+Word is misspelt : mistasdas
+['mistasdas']
+Word is misspelt : mistasdas
+Word is misspelt : mistasdas
+Word is misspelt : spelllleeeing
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.028s
+
+OK
+
+C:\bigdata\PBD_BKP\spellChecker>python spellcheck_test.py
+True
+False
+Word is misspelt : mistasdas
+['mistasdas']
+Word is misspelt : mistasdas
+Word is misspelt : mistasdas
+Word is misspelt : spelllleeeing
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.028s
+
+OK
+
+C:\bigdata\PBD_BKP\spellChecker>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   spel.py
+        modified:   spel.pyc
+        modified:   spellcheck_test.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\bigdata\PBD_BKP\spellChecker>python spellcheck_test.py
+True
+False
+Word is misspelt : mistasdas
+['mistasdas']
+Word is misspelt : mistasdas
+Word is misspelt : mistasdas
+Word is misspelt : spelllleeeing
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.033s
+
+OK
+
+C:\bigdata\PBD_BKP\spellChecker>git add *.py
+
+C:\bigdata\PBD_BKP\spellChecker>git commit -m " Handle multple failed words."*.p
+y
+[master ab98780]  Handle multple failed words.*.py
+ 2 files changed, 26 insertions(+), 19 deletions(-)
+ rewrite spellChecker/spellcheck_test.py (72%)
+
+C:\bigdata\PBD_BKP\spellChecker>git push
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 749 bytes | 0 bytes/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/benishkp/PBD_BKP.git
+   c0a2836..ab98780  master -> master
+
+C:\bigdata\PBD_BKP\spellChecker>git rm*.pyc
+git: 'rm*.pyc' is not a git command. See 'git --help'.
+
+C:\bigdata\PBD_BKP\spellChecker>python spel.py
+  File "spel.py", line 20
+    self.sentences = self.load_file(file_name)
+       ^
+IndentationError: expected an indented block
+
+C:\bigdata\PBD_BKP\spellChecker>python spel.py
+  File "spel.py", line 10
+    def load_file(self, file_name):
+                                  ^
+IndentationError: unindent does not match any outer indentation level
+
+C:\bigdata\PBD_BKP\spellChecker>python spellcheck_test.py
+  File "spellcheck_test.py", line 23
+SyntaxError: Non-ASCII character '\xe2' in file spellcheck_test.py on line 23, b
+ut no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+
+C:\bigdata\PBD_BKP\spellChecker>python spellcheck_test.py
+Traceback (most recent call last):
+  File "spellcheck_test.py", line 2, in <module>
+    from spel import SpellChecker
+  File "C:\bigdata\PBD_BKP\spellChecker\spel.py", line 10
+    def load_file(self, file_name):
+                                  ^
+IndentationError: unindent does not match any outer indentation level
+
+C:\bigdata\PBD_BKP\spellChecker>python spel.py
+  File "spel.py", line 11
+    lines = open(file_name).readlines()
+        ^
+IndentationError: expected an indented block
+
+C:\bigdata\PBD_BKP\spellChecker>python spellcheck_test.py
+Traceback (most recent call last):
+  File "spellcheck_test.py", line 2, in <module>
+    from spel import SpellChecker
+  File "C:\bigdata\PBD_BKP\spellChecker\spel.py", line 11
+    lines = open(file_name).readlines()
+        ^
+IndentationError: expected an indented block
+
+C:\bigdata\PBD_BKP\spellChecker>python spel.py
+  File "spel.py", line 27
+    self.sentences = self.load_file(file_name)
+       ^
+IndentationError: expected an indented block
+
+C:\bigdata\PBD_BKP\spellChecker>python spel.py
+True
+False
+Word is misspelt : mistasdas
+['mistasdas']
+
+C:\bigdata\PBD_BKP\spellChecker>python spellcheck_test.py
+True
+False
+Word is misspelt : mistasdas
+['mistasdas']
+Traceback (most recent call last):
+  File "spellcheck_test.py", line 3, in <module>
+    class TestSpellChecker(unittest.TestCase):
+  File "spellcheck_test.py", line 24, in TestSpellChecker
+    self.assertEqual(21, len(self.spellChecker.check_document('spell.words')))
+NameError: name 'self' is not defined
+
+C:\bigdata\PBD_BKP\spellChecker>python spellcheck_test.py
+True
+False
+Word is misspelt : mistasdas
+['mistasdas']
+Word is misspelt : mistasdas
+Word is misspelt : mistasdas
+Word is misspelt : spelllleeeing
+E
+======================================================================
+ERROR: test_spell_checker (__main__.TestSpellChecker)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "spellcheck_test.py", line 23, in test_spell_checker
+    self.assertEqual(21, len(self.spellChecker.check_document('spell.words')))
+  File "C:\bigdata\PBD_BKP\spellChecker\spel.py", line 31, in check_document
+    failed_words_in_sentences.extend(self.check_words(sentence, index))
+TypeError: check_words() takes exactly 2 arguments (3 given)
+
+----------------------------------------------------------------------
+Ran 1 test in 0.046s
+
+FAILED (errors=1)
+
+C:\bigdata\PBD_BKP\spellChecker>python spellcheck_test.py
+True
+False
+Word is misspelt : mistasdas
+['mistasdas']
+Word is misspelt : mistasdas
+Word is misspelt : mistasdas
+Word is misspelt : spelllleeeing
+Word is misspelt : all-American
+Word is misspelt : anti-American
+Word is misspelt : anti-Communist
+Word is misspelt : anti-Semitic
+Word is misspelt : anti-Soviet
+Word is misspelt : d'Alene
+Word is misspelt : d'Estaing
+Word is misspelt : ex-Marine
+Word is misspelt : mid-December
+Word is misspelt : mid-February
+Word is misspelt : mid-January
+Word is misspelt : mid-October
+Word is misspelt : non-Canadians
+Word is misspelt : non-Mormon
+Word is misspelt : pre-Columbian
+Word is misspelt : pro-American
+Word is misspelt : pro-Iran
+Word is misspelt : pro-Western
+Word is misspelt : t'Hooft
+Word is misspelt : trans-Alaska
+Word is misspelt : trans-Atlantic
+.
+----------------------------------------------------------------------
+Ran 1 test in 19.050s
+
+OK
+
+C:\bigdata\PBD_BKP\spellChecker>python spel.py
+True
+False
+Word is misspelt : mistasdas
+['mistasdas']
+
+C:\bigdata\PBD_BKP\spellChecker>python spellcheck_test.py
+True
+False
+Word is misspelt : mistasdas
+['mistasdas']
+Word is misspelt : mistasdas
+Word is misspelt : mistasdas
+Word is misspelt : spelllleeeing
+Word is misspelt : all-American
+Word is misspelt : anti-American
+Word is misspelt : anti-Communist
+Word is misspelt : anti-Semitic
+Word is misspelt : anti-Soviet
+Word is misspelt : d'Alene
+Word is misspelt : d'Estaing
+Word is misspelt : ex-Marine
+Word is misspelt : mid-December
+Word is misspelt : mid-February
+Word is misspelt : mid-January
+Word is misspelt : mid-October
+Word is misspelt : non-Canadians
+Word is misspelt : non-Mormon
+Word is misspelt : pre-Columbian
+Word is misspelt : pro-American
+Word is misspelt : pro-Iran
+Word is misspelt : pro-Western
+Word is misspelt : t'Hooft
+Word is misspelt : trans-Alaska
+Word is misspelt : trans-Atlantic
+.
+----------------------------------------------------------------------
+Ran 1 test in 19.485s
+
+OK
+
+C:\bigdata\PBD_BKP\spellChecker>^A
+
+C:\bigdata\PBD_BKP\spellChecker>						
